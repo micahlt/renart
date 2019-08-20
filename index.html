@@ -2,15 +2,17 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <style>
 * {
   box-sizing: border-box;
 }
 
 #artInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 10px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/221px-Vector_search_icon.svg.png');
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: 29px;
   width: 100%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
@@ -67,7 +69,7 @@ p {
   <h1><a href = "https://micahlt.github.io/renart/">RenArt</a></h1>
 <h2>search artworks by name, artist, and more</h2>
 
-<input type="text" id="artInput" onkeyup="artFunction()" placeholder="search for works.." title="Type in a name">
+<input type="text" id="artInput" onkeyup="artFunction()" placeholder=" " title="Type in a name">
 
 <table id="artTable">
   <tr class="header">
@@ -131,13 +133,13 @@ p {
     <td>1511</td>
   </tr>
   <tr>
-    <td>Bacchus and Ariadne</td>
+    <td><a href="http://www.google.com/search?q=bacchus+and+ariadne">Bacchus and Ariadne</a></td>
     <td>Titian</td>
     <td>Alfonso I de'Este</td>
     <td>1523</td>
   </tr> 
   <tr>
-    <td>Marriage of the Virgin</td>
+    <td><a href="http://www.google.com/search?q=marriage+of+the+virgin">Marriage of the Virgin</a></td>
     <td>Titian</td>
     <td>Filippo degli Albezzini</td>
     <td>1504</td>
