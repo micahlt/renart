@@ -16,6 +16,7 @@
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 #artTable {
@@ -23,31 +24,37 @@
   width: 100%;
   border: 1px solid #ddd;
   font-size: 18px;
+  text-align: center;
 }
 
 #artTable th, #artTable td {
   text-align: left;
   padding: 12px;
+  text-align: center;
 }
 
 #artTable tr {
   border-bottom: 1px solid #ddd;
+  text-align: center;
 }
 
 #artTable tr.header, #artTable tr:hover {
   background-color: #f1f1f1;
+  text-align: center;
 }
-  
-h2 {
+
+
+h2, h1 {
   font-family: sans-serif;
-  font-size: 32px;
+  text-align: center;
 }
   
 </style>
 </head>
 <body>
 
-<h2>SEARCH ARTWORK</h2>
+<h1>RenArt</h1>
+<h2>search Artworks by name</h2>
 
 <input type="text" id="artInput" onkeyup="myFunction()" placeholder="Search for works.." title="Type in a name">
 
@@ -87,6 +94,12 @@ h2 {
     <td>Titian</td>
     <td>Alfonso I de'Este</td>
     <td>1523</td>
+  </tr> 
+  <tr>
+    <td>Marriage of the Virgin</td>
+    <td>Titian</td>
+    <td>Filippo degli Albezzini</td>
+    <td>1504</td>
   </tr>
 </table>
 
