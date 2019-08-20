@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>RenArt</title>
 <style>
 * {
   box-sizing: border-box;
@@ -10,7 +11,7 @@
 
 #artInput {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/221px-Vector_search_icon.svg.png');
-  background-position: center;
+  background-position: 10px 10px;;
   background-repeat: no-repeat;
   background-size: 29px;
   width: 100%;
@@ -69,7 +70,7 @@ p {
   <h1><a href = "https://micahlt.github.io/renart/">RenArt</a></h1>
 <h2>search artworks by name, artist, and more</h2>
 
-<input type="text" id="artInput" onkeyup="artFunction()" placeholder=" " title="Type in a name">
+<input type="text" id="artInput" onkeyup="artFunction()" placeholder="name, date, artist..." title="Work search">
 
 <table id="artTable">
   <tr class="header">
