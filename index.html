@@ -60,7 +60,7 @@ h1 {
 <h1>RenArt</h1>
 <h2>search artworks by name</h2>
 
-<input type="text" id="artInput" onkeyup="myFunction()" placeholder="Search for works.." title="Type in a name">
+<input type="text" id="artInput" onkeyup="artFunction()" placeholder="Search for works.." title="Type in a name">
 
 <table id="artTable">
   <tr class="header">
@@ -108,29 +108,44 @@ h1 {
   <tr>
     <td>Adoration of the Magi</td>
     <td>Sandro Botticelli</td>
-    <td>Gaspare di Zanobi del Lama</td>
+    <td>Gaspare di Zanobi del Lamå</td>
     <td>1476</td>
   </tr>
 </table>
 
-<script>
-function myFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("artInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("artTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
+<script>function artFunction() {
+
+  // Declare variables 
+  var input = document.getElementById("artInput");
+  var filter = input.value.toUpperCase();
+  var table = document.getElementById("artTable");
+  var trs = table.tBodies[0].getElementsByTagName("tr");
+
+  // Loop through first tbody's rows
+  for (var i = 0; i < trs.length; i++) {
+
+    // define the row's cells
+    var tds = trs[i].getElementsByTagName("td");
+
+    // hide the row
+    trs[i].style.display = "none";
+
+    // loop through row cells
+    for (var i2 = 0; i2 < tds.length; i2++) {
+
+      // if there's a match
+      if (tds[i2].innerHTML.toUpperCase().indexOf(filter) > -1) {
+
+        // show the row
+        trs[i].style.display = "";
+
+        // skip to the next row
+        continue;
+
       }
-    }       
+    }
   }
+
 }
 </script>
 
