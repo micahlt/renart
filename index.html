@@ -51,7 +51,7 @@ a {
   color: #f56642;
 }
   
-h2, h1 {
+h3, h2, h1 {
   font-family: sans-serif;
   text-align: center;
 }
@@ -68,140 +68,10 @@ p {
 </head>
 <body>
 
+  <img src = "https://raw.githubusercontent.com/micahlt/renart/master/77E4F938-6119-49F1-906D-33252AB195CD.png">
   <h1><a href = "https://micahlt.github.io/renart/"><b>RenArt</b></a></h1>
-<h2>search artworks by name, artist, and more</h2>
+  <h2>searchable index of Renaissance art</h2><h3><a href = "art.html">Start Searching</a></h3>
 
-<input type="text" id="artInput" onkeyup="artFunction()" placeholder="name, date, artist..." title="Work search">
-
-<table id="artTable">
-  <tr class="header">
-    <th style="width:25%;">Title</th>
-    <th style="width:25%;">Artist</th>
-    <th style="width:25%;">Commisioner</th>
-    <th style="width:25%;">Completed</th>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=the+annunciation">The Annunciation</a></td>
-    <td>Fra Angelico</td>
-    <td>Cosimo de' Medici</td>
-    <td>1446</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=portrait+of+julius+ii">Portrait of Julius II</a></td>
-    <td>Raphael</td>
-    <td>Julius II</td>
-    <td>1512</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=the+presentation+of+the+virgin+in+the+temple">The Presentation of the Virgin in the Temple</a></td>
-    <td>Fra Carnevale</td>
-    <td>unknown</td>
-    <td>1467</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=the+wedding+at+cana">The Wedding at Cana</a></td>
-    <td>Botticelli</td>
-    <td>the Black Monks</td>
-    <td>1563</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=the+sistine+chapel+ceiling">The Sistine Chapel Ceiling</a></td>
-    <td>Michaelangelo</td>
-    <td>Julius II</td>
-    <td>1512</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=venus+and+mars">Venus and Mars</a></td>
-    <td>Botticelli</td>
-    <td>possibly the Vespuccis</td>
-    <td>1485</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=the+feast+in+the+house+of+levi">The Feast in the House of Levi</a></td>
-    <td>Paolo Veronese</td>
-    <td>possibly Dominican monks</td>
-    <td>1573</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=the+sistine+madonna">The Sistine Madonna</a></td>
-    <td>Raphael</td>
-    <td>Julius II</td>
-    <td>1514</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=the+school+of+athens">The School of Athens</a></td>
-    <td>Raphael</td>
-    <td>Julius II</td>
-    <td>1511</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=bacchus+and+ariadne">Bacchus and Ariadne</a></td>
-    <td>Titian</td>
-    <td>Alfonso I de'Este</td>
-    <td>1523</td>
-  </tr> 
-  <tr>
-    <td><a href="http://www.google.com/search?q=marriage+of+the+virgin">Marriage of the Virgin</a></td>
-    <td>Titian</td>
-    <td>Filippo degli Albezzini</td>
-    <td>1504</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=adoration+of+the+magi">Adoration of the Magi</a></td>
-    <td>Sandro Botticelli</td>
-    <td>Gaspare di Zanobi del Lama</td>
-    <td>1476</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=st+stephens+disputation">St. Stephen's Disputation</a></td>
-    <td>Paolo Veronese</td>
-    <td>the Scuola di Santo Stefano</td>
-    <td>1514</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.google.com/search?q=the+holy+trinity+art">The Holy Trinity</a></td>
-    <td>Masaccio</td>
-    <td>unknown</td>
-    <td>1427</td>
-  </tr>
-</table>
-  <br><br><br><br><br>
-  <p>this project was created and is maintained by Micah Lindley</p>
-<script>function artFunction() {
-
-  // Declare variables 
-  var input = document.getElementById("artInput");
-  var filter = input.value.toUpperCase();
-  var table = document.getElementById("artTable");
-  var trs = table.tBodies[0].getElementsByTagName("tr");
-
-  // Loop through first tbody's rows
-  for (var i = 0; i < trs.length; i++) {
-
-    // define the row's cells
-    var tds = trs[i].getElementsByTagName("td");
-
-    // hide the row
-    trs[i].style.display = "none";
-
-    // loop through row cells
-    for (var i2 = 0; i2 < tds.length; i2++) {
-
-      // if there's a match
-      if (tds[i2].innerHTML.toUpperCase().indexOf(filter) > -1) {
-
-        // show the row
-        trs[i].style.display = "";
-
-        // skip to the next row
-        continue;
-
-      }
-    }
-  }
-
-}
-</script>
 
 </body>
 </html>
