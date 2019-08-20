@@ -13,13 +13,14 @@
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/221px-Vector_search_icon.svg.png');
   background-position: 10px 10px;;
   background-repeat: no-repeat;
-  background-size: 29px;
+  background-size: 25px;
   width: 100%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
   text-align: center;
+  border-radius: 25px;
 }
 #artTable {
   border-collapse: collapse;
@@ -69,15 +70,18 @@ p {
   text-align: center;
 }
   
+.centerenter {
+  text-align: center;
+}
 </style>
 </head>
 <body>
 
   <h1><a href = "https://micahlt.github.io/renart/"><b>RenArt</b></a></h1>
 <h2>search artworks by name, artist, and more</h2>
-
+<div class = "centerenter">
 <input type="text" id="artInput" onkeyup="artFunction()" placeholder="name, date, artist..." title="Work search">
-
+</div>
 <table id="artTable">
   <tr class="header">
     <th style="width:25%;">Title</th>
