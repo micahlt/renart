@@ -19,6 +19,18 @@ h3, h2, h1 {
   text-align: center;
 }
 
+h1:hover {
+  animation-name: artshadow;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+  animation-delay: 0.1s;
+}
+@keyframes artshadow {
+  from {}
+  to {text-shadow: 2px 2px 5px black;}
+}  
+  
 img {
   text-align: center;
 }
