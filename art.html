@@ -73,6 +73,11 @@ p {
 .centerenter {
   text-align: center;
 }
+  
+.tablesearch {
+  text-align: center;
+}
+  
 </style>
 </head>
 <body>
@@ -82,6 +87,7 @@ p {
 <div class = "centerenter">
 <input type="text" id="artInput" onkeyup="artFunction()" placeholder="name, date, artist..." title="Work search">
 </div>
+<div class = "tablesearch">
 <table id="artTable">
   <tr class="header">
     <th style="width:25%;">Title</th>
@@ -180,6 +186,7 @@ p {
     <td>1427</td>
   </tr>
 </table>
+  </div>
   <br><br><br><br><br>
   <p>this project was created and is maintained by Micah Lindley</p>
 <script>function artFunction() {
