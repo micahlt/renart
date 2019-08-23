@@ -198,14 +198,14 @@ p {
   <br><br><br><br><br>
   <p>this project was created and is maintained by <a href = "https://micahlt.github.io/">Micah Lindley</a>.  Last updated 8/21/19.</p>
 <script>function artFunction() {
-  // Declare variables 
+  // Declare starting variables 
   var input = document.getElementById("artInput");
   var filter = input.value.toUpperCase();
   var table = document.getElementById("artTable");
   var trs = table.tBodies[0].getElementsByTagName("tr");
-  // Loop through first tbody's rows
+  // Loop through rows
   for (var i = 0; i < trs.length; i++) {
-    // define the row's cells
+    // Define the cells
     var tds = trs[i].getElementsByTagName("td");
     // hide the row
     trs[i].style.display = "none";
