@@ -62,7 +62,9 @@ p {
   <img src = "https://raw.githubusercontent.com/micahlt/renart/master/77E4F938-6119-49F1-906D-33252AB195CD.png" align = "center" class = "center">
   <h1><a href = "https://micahlt.github.io/renart/"><b>RenArt</b></a></h1>
   <h2>the searchable index of Renaissance art</h2><h3><a href = "art.html">Search</a> | <a href = "about.html">About</a></h3>
-
+<button onclick="install()">
+  Install the PWA
+</button>
 <script>
   // This is the "Offline page" service worker
 
@@ -83,6 +85,37 @@ if ("serviceWorker" in navigator) {
       });
   }
 }
+  
+  
+    let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+});
+
+async function install() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    console.log(deferredPrompt)
+    deferredPrompt.userChoice.then(function(choiceResult){
+
+      if (choiceResult.outcome === 'accepted') {
+      console.log('Your PWA has been installed');
+    } else {
+      console.log('User chose to not install your PWA');
+    }
+
+    deferredPrompt = null;
+
+    });
+
+ 
+  }
+}
+
   </script>
 </body>
 </html>
