@@ -1,0 +1,92 @@
+{"dir" : "ltr",
+    "lang" : "en",
+    "name" : "RenArt",
+    "scope" : "/renart/",
+    "display" : "browser",
+    "start_url" : "https://micahlt.github.io/renart/",
+    "short_name" : "RenArt",
+    "theme_color" : "transparent",
+    "description" : "Searchable index of Renaissance artworks",
+    "orientation" : "any",
+    "background_color" : "transparent",
+    "related_applications" : "",
+    "prefer_related_applications" : "false",
+    "generated" : "true",
+    "icons" : [
+        {
+            "src": "[Embedded]",
+            "sizes": "44x44"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "48x48"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "1240x600"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "300x300"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "150x150"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "88x88"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "24x24"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "50x50"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "620x300"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "192x192"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "144x144"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "96x96"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "72x72"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "36x36"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "1024x1024"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "180x180"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "152x152"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "120x120"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "76x76"
+        }
+    ]}
